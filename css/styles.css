@@ -89,10 +89,27 @@ button {
 .nav-list {
     display: flex;
     gap: 40px;
+    position: relative;
 }
 
-.nav-list-item {
+/* .nav-list-item::after {
+    content: '';
+    border-radius: 2px;
+    width: 48px;
+    height: 4px;
+    background: #404bbf;
+    position: absolute;
+} */
 
+.nav-list-link::after {
+    content: '';
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background: #404bbf;
+    position: absolute;
+    display: flex;
+    bottom: 0;
 }
 
 .nav-list-link {
@@ -103,6 +120,7 @@ button {
     color: #2e2f42;
     padding-top: 24px;
     padding-bottom: 24px;
+    position: relative;
 }
 
 .nav-list-link:hover {
@@ -146,7 +164,7 @@ button {
     background-color: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/people-office.jpg);
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -194,6 +212,17 @@ button {
     display: flex;
     gap: 24px;
 
+}
+
+.features-icon {
+    width: 264px;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    display: flex;
+    background-color: #f4f4fd;
+    justify-content: center;
+    align-items: center;
 }
 
 .features-list-title {
@@ -312,6 +341,30 @@ button {
 
 .portfolio-element {
     padding-bottom: 32px;
+    cursor: pointer;
+}
+
+.portfolio-element:hover .portfolio-card-text {
+    transform: translateY(0);
+}
+
+.portfolio-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    position: absolute;
+    top: 0;
+    background-color: #4d5ae5;
+    height: 100%;
+    padding: 40px 32px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-element-subject {
