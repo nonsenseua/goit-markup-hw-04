@@ -304,7 +304,8 @@ button {
 }
 
 .soc-list-item:hover .soc-list-link,
-.soc-list-item:focus .soc-list-link {
+.soc-list-item:focus .soc-list-link,
+.soc-list-item:active .soc-list-link {
     background-color: #404bbf;
 }
 
@@ -423,7 +424,8 @@ margin-right: 120px;
 }
 
 .footer .soc-list-item:hover .soc-list-link,
-.footer .soc-list-item:focus .soc-list-link {
+.footer .soc-list-item:focus .soc-list-link,
+.footer .soc-list-item:active .soc-list-link {
     background-color: #31d0aa;
 }
 
