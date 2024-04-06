@@ -303,9 +303,9 @@ button {
     background-color: #4d5ae5;
 }
 
-.soc-list-item:hover .soc-list-link,
-.soc-list-item:focus .soc-list-link,
-.soc-list-item:active .soc-list-link {
+.soc-list-link:hover,
+.soc-list-link:focus,
+.soc-list-link:active {
     background-color: #404bbf;
 }
 
@@ -423,11 +423,12 @@ margin-right: 120px;
     max-width: 264px;
 }
 
-.footer .soc-list-item:hover .soc-list-link,
-.footer .soc-list-item:focus .soc-list-link,
-.footer .soc-list-item:active .soc-list-link {
+.footer .soc-list-link:hover,
+.footer .soc-list-link:focus,
+.footer .soc-list-link:active {
     background-color: #31d0aa;
 }
+
 
 .footer .soc-list-link {
     display: flex;
